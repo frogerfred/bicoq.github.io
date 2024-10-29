@@ -400,8 +400,9 @@ Body {
   padding: 3rem;
 }
 .showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
+  min-height: 25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
@@ -547,6 +548,29 @@ Body {
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--dark);
+}
+
+/*** Testimonial produits***/
+.carousel-produits::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 1) 0%, rgb(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.carousel-produits::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 1) 0%, rgb(255, 255, 255, 0) 100%);
+    z-index: 1;
 }
 
 
