@@ -27,6 +27,51 @@
     z-index: 99;
 }
 
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('../lib/fonts/BerlinSansFB/BerlinSansFB-Reg.woff2') format('woff2'),
+        url('../lib/fonts/BerlinSansFB/BerlinSansFB-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Berlin';
+    src: url('../lib/fonts/BerlinSansFB/BerlinSansFBDemi-Bold.woff2') format('woff2'),
+        url('../lib/fonts/BerlinSansFB/BerlinSansFBDemi-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Berlin';
+    src: url('../lib/fonts/BerlinSansFB/BerlinSansFB-Bold.woff2') format('woff2'),
+        url('../lib/fonts/BerlinSansFB/BerlinSansFB-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+h2, h3 {
+font-family: "Berlin", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #439794;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+}
+h4 {
+    font-family: "Berlin", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #439794;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+}
+
+
 /*** Body ***/
 Body {
     background: #ece9ec;
